@@ -1,0 +1,30 @@
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius", "compass/css3/transition";
+
+@include font-face("???", font-files("???.ttf"));
+
+/* for Bootstrap */
+.no-margin {margin: 0 !important}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+/**/
+.left {float: left;}
+.right {float: right;}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  text-align: center;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 250px;
+}
+#timer {
+  font-size: 32px;
+}
