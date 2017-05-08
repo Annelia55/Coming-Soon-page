@@ -111,26 +111,49 @@ a:hover {
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
-  text-align: justify;
   color: rgba(18, 36, 78, 0.9);
   height: 1500px;
 }
-/* line 34, ../sass/stylesheet.scss */
-.content .title {
+/* line 33, ../sass/stylesheet.scss */
+.content .title-content {
+  text-align: center;
+  /* COUNT UP */
+}
+/* line 35, ../sass/stylesheet.scss */
+.content .title-content h1 {
   font-size: 60px;
   color: rgba(18, 36, 78, 0.56);
   font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 /* line 42, ../sass/stylesheet.scss */
-.content p {
-  padding: 0 20px;
+.content .title-content .open-text {
+  color: rgba(18, 36, 78, 0.6);
+  font-size: 20px;
+}
+/* line 48, ../sass/stylesheet.scss */
+.content .title-content #counter p {
+  color: rgba(18, 36, 78, 0.6);
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: inline-block;
+  font-weight: lighter;
+}
+/* line 56, ../sass/stylesheet.scss */
+.content .title-content #counter #years,
+.content .title-content #counter #days,
+.content .title-content #counter #hours,
+.content .title-content #counter #minutes,
+.content .title-content #counter #seconds {
+  color: rgba(18, 36, 78, 0.8);
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /* VIDEO BACKGROUND */
-/* line 49, ../sass/stylesheet.scss */
+/* line 72, ../sass/stylesheet.scss */
 video {
   position: fixed;
   top: 50%;
@@ -143,5 +166,3 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
-
-/* @media */

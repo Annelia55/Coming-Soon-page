@@ -28,21 +28,44 @@ a {
   margin-bottom: 100px;
   background-color: rgba(255, 255, 255, 0.2);
   @include border-radius(80px);
-  text-align: justify;
   color: rgba(18, 36, 78, 0.90);
   height: 1500px;
-  .title {
-    font-size: 60px;
-    color: rgba(18, 36, 78, 0.56);
-    font-weight: bold;
+  .title-content {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  p {
-    padding: 0 20px;
+    h1 {
+      font-size: 60px;
+      color: rgba(18, 36, 78, 0.56);
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+    .open-text {
+      color: rgba(18, 36, 78, 0.60);
+      font-size: 20px;
+    }
+    /* COUNT UP */
+    #counter {
+      p {
+        color: rgba(18, 36, 78, 0.60);
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        display: inline-block;
+        font-weight: lighter;
+      }
+      #years,
+      #days,
+      #hours,
+      #minutes,
+      #seconds {
+        color: rgba(18, 36, 78, 0.80);
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
   }
 }
+
 
 
 /* VIDEO BACKGROUND */
@@ -60,4 +83,4 @@ video {
   background-size: cover;
 }
 
-/* @media */
+
