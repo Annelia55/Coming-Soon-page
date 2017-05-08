@@ -95,19 +95,53 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 20, ../sass/stylesheet.scss */
-body {
-  text-align: center;
+/* CONTENT */
+/* line 21, ../sass/stylesheet.scss */
+.fish {
+  max-width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-/* line 23, ../sass/stylesheet.scss */
-.title {
-  font-size: 50px;
+/* line 26, ../sass/stylesheet.scss */
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  text-align: justify;
+  color: rgba(18, 36, 78, 0.9);
+  height: 1500px;
+}
+/* line 34, ../sass/stylesheet.scss */
+.content .title {
+  font-size: 60px;
+  color: rgba(18, 36, 78, 0.56);
   font-weight: bold;
-  margin-top: 250px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 42, ../sass/stylesheet.scss */
+.content p {
+  padding: 0 20px;
 }
 
-/* line 28, ../sass/stylesheet.scss */
-#timer {
-  font-size: 32px;
+/* VIDEO BACKGROUND */
+/* line 49, ../sass/stylesheet.scss */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
 }
+
+/* @media */

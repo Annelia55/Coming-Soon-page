@@ -17,14 +17,47 @@ a {
   }
 }
 
-body {
-  text-align: center;
+/* CONTENT */
+.fish {
+  max-width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.title {
-  font-size: 50px;
-  font-weight: bold;
-  margin-top: 250px;
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  @include border-radius(80px);
+  text-align: justify;
+  color: rgba(18, 36, 78, 0.90);
+  height: 1500px;
+  .title {
+    font-size: 60px;
+    color: rgba(18, 36, 78, 0.56);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  p {
+    padding: 0 20px;
+  }
 }
-#timer {
-  font-size: 32px;
+
+
+/* VIDEO BACKGROUND */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  //background: url('...jpeg') no-repeat;
+  background-size: cover;
 }
+
+/* @media */
