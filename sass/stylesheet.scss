@@ -1,4 +1,4 @@
-@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius", "compass/css3/transition";
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius", "compass/css3/transition", "compass/css3/box-shadow";
 
 @include font-face("???", font-files("???.ttf"));
 
@@ -39,17 +39,11 @@ a {
       margin-top: 60px;
       margin-bottom: 40px;
     }
-    .open-text {
-      color: rgba(18, 36, 78, 0.60);
-      font-size: 20px;
-    }
     /* COUNT UP */
     #counter {
       p {
         color: rgba(18, 36, 78, 0.60);
         font-size: 22px;
-        margin-top: 20px;
-        margin-bottom: 50px;
         display: inline-block;
         font-weight: lighter;
       }
@@ -59,13 +53,12 @@ a {
       #minutes,
       #seconds {
         color: rgba(18, 36, 78, 0.80);
-        font-size: 32px;
+        font-size: 42px;
         font-weight: bold;
       }
     }
   }
 }
-
 
 
 /* VIDEO BACKGROUND */
@@ -79,8 +72,61 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  //background: url('...jpeg') no-repeat;
   background-size: cover;
+  //background: url('...jpeg') no-repeat;
+}
+
+
+/* ACCORDION GALLERY
+
+Width of image = 640px
+total images = 5
+width of hovered image = 640px
+width of un-hovered image = 40px
+total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+
+*/
+#accordion {
+  max-width: 805px;
+  height: auto;
+  overflow: hidden;
+  margin: 50px auto;
+  @include box-shadow(0 0 10px 1px rgba(18, 36, 78, 0.60));
+  .image_title {
+    background: rgba(18, 36, 78, 0.56);
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 640px;
+  }
+  .image_title a {
+    display: block;
+    color: rgba(255, 255, 255, 0.91);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+  }
+  ul {       //A small hack to prevent flickering on some browsers. This will give sample space to the last item to move instead of falling down/flickering during hovers
+    width: 2000px;
+  }
+  li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    border-left: 1px solid #888;
+    @include box-shadow(0 0 25px 10px rgba(0, 0, 0, 0.5));
+    @include transition(.5s);
+    img {
+      display: block;
+    }
+  }
+}
+#accordion ul:hover li {  //width of visible area of other images while hovering
+  width: 40px;
+}
+#accordion ul li:hover {  // width of full image
+  width: 640px;
 }
 
 

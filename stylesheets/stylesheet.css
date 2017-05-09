@@ -127,33 +127,26 @@ a:hover {
   margin-top: 60px;
   margin-bottom: 40px;
 }
-/* line 42, ../sass/stylesheet.scss */
-.content .title-content .open-text {
-  color: rgba(18, 36, 78, 0.6);
-  font-size: 20px;
-}
-/* line 48, ../sass/stylesheet.scss */
+/* line 44, ../sass/stylesheet.scss */
 .content .title-content #counter p {
   color: rgba(18, 36, 78, 0.6);
   font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 50px;
   display: inline-block;
   font-weight: lighter;
 }
-/* line 56, ../sass/stylesheet.scss */
+/* line 50, ../sass/stylesheet.scss */
 .content .title-content #counter #years,
 .content .title-content #counter #days,
 .content .title-content #counter #hours,
 .content .title-content #counter #minutes,
 .content .title-content #counter #seconds {
   color: rgba(18, 36, 78, 0.8);
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
 }
 
 /* VIDEO BACKGROUND */
-/* line 72, ../sass/stylesheet.scss */
+/* line 65, ../sass/stylesheet.scss */
 video {
   position: fixed;
   top: 50%;
@@ -165,4 +158,74 @@ video {
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+}
+
+/* ACCORDION GALLERY
+
+Width of image = 640px
+total images = 5
+width of hovered image = 640px
+width of un-hovered image = 40px
+total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+
+*/
+/* line 90, ../sass/stylesheet.scss */
+#accordion {
+  max-width: 805px;
+  height: auto;
+  overflow: hidden;
+  margin: 50px auto;
+  -moz-box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
+  -webkit-box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
+  box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
+}
+/* line 96, ../sass/stylesheet.scss */
+#accordion .image_title {
+  background: rgba(18, 36, 78, 0.56);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 640px;
+}
+/* line 102, ../sass/stylesheet.scss */
+#accordion .image_title a {
+  display: block;
+  color: rgba(255, 255, 255, 0.91);
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}
+/* line 109, ../sass/stylesheet.scss */
+#accordion ul {
+  width: 2000px;
+}
+/* line 112, ../sass/stylesheet.scss */
+#accordion li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  border-left: 1px solid #888;
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 120, ../sass/stylesheet.scss */
+#accordion li img {
+  display: block;
+}
+
+/* line 125, ../sass/stylesheet.scss */
+#accordion ul:hover li {
+  width: 40px;
+}
+
+/* line 128, ../sass/stylesheet.scss */
+#accordion ul li:hover {
+  width: 640px;
 }
