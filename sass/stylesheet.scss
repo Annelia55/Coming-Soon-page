@@ -92,6 +92,7 @@ default width = 800/5 = 160px;
   height: auto;
   overflow: hidden;
   margin: 50px auto;
+  @include border-radius(80px);
   @include box-shadow(0 0 10px 1px rgba(18, 36, 78, 0.60));
   .image_title {
     background: rgba(18, 36, 78, 0.56);
@@ -99,7 +100,7 @@ default width = 800/5 = 160px;
     left: 0; bottom: 0;
     width: 640px;
   }
-  .image_title a {
+  .image_title p {
     display: block;
     color: rgba(255, 255, 255, 0.91);
     text-decoration: none;
@@ -117,6 +118,7 @@ default width = 800/5 = 160px;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     @include box-shadow(0 0 25px 10px rgba(0, 0, 0, 0.5));
     @include transition(.5s);
+    @include border-radius(80px);
     img {
       display: block;
     }
@@ -130,9 +132,13 @@ default width = 800/5 = 160px;
 }
 
 /* MODAL WINDOW - images */
-#myImg {
+#myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
   cursor: pointer;
   transition: 0.3s;
+}
+#img01, #img02, #img03, #img04, #img05 {
+  padding-top: 16px;
+  @include border-radius(80px);
 }
 .modal {
   z-index: 1;
@@ -145,22 +151,24 @@ default width = 800/5 = 160px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .modal-content {
+  @include border-radius(80px);
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
-}
-#img-caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 695px;
-  text-align: center;
-  color: #fff;
-  padding: 25px 0;
+  max-width: 675px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.modal-content, #img-caption {
+.img-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 640px;
+  text-align: center;
+  color: rgba(18, 36, 78, 0.80);
+  padding: 20px 0;
+}
+
+.modal-content, .img-caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;

@@ -176,11 +176,14 @@ default width = 800/5 = 160px;
   height: auto;
   overflow: hidden;
   margin: 50px auto;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
   -moz-box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
   -webkit-box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
   box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
 }
-/* line 96, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 #accordion .image_title {
   background: rgba(18, 36, 78, 0.56);
   position: absolute;
@@ -188,19 +191,19 @@ default width = 800/5 = 160px;
   bottom: 0;
   width: 640px;
 }
-/* line 102, ../sass/stylesheet.scss */
-#accordion .image_title a {
+/* line 103, ../sass/stylesheet.scss */
+#accordion .image_title p {
   display: block;
   color: rgba(255, 255, 255, 0.91);
   text-decoration: none;
   padding: 20px;
   font-size: 16px;
 }
-/* line 109, ../sass/stylesheet.scss */
+/* line 110, ../sass/stylesheet.scss */
 #accordion ul {
   width: 2000px;
 }
-/* line 112, ../sass/stylesheet.scss */
+/* line 113, ../sass/stylesheet.scss */
 #accordion li {
   position: relative;
   display: block;
@@ -214,30 +217,41 @@ default width = 800/5 = 160px;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
 }
-/* line 120, ../sass/stylesheet.scss */
+/* line 122, ../sass/stylesheet.scss */
 #accordion li img {
   display: block;
 }
 
-/* line 125, ../sass/stylesheet.scss */
+/* line 127, ../sass/stylesheet.scss */
 #accordion ul:hover li {
   width: 40px;
 }
 
-/* line 128, ../sass/stylesheet.scss */
+/* line 130, ../sass/stylesheet.scss */
 #accordion ul li:hover {
   width: 640px;
 }
 
 /* MODAL WINDOW - images */
-/* line 133, ../sass/stylesheet.scss */
-#myImg {
+/* line 135, ../sass/stylesheet.scss */
+#myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* line 137, ../sass/stylesheet.scss */
+/* line 139, ../sass/stylesheet.scss */
+#img01, #img02, #img03, #img04, #img05 {
+  padding-top: 16px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+}
+
+/* line 143, ../sass/stylesheet.scss */
 .modal {
   z-index: 1;
   padding-top: 100px;
@@ -249,27 +263,30 @@ default width = 800/5 = 160px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 147, ../sass/stylesheet.scss */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
 /* line 153, ../sass/stylesheet.scss */
-#img-caption {
+.modal-content {
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  margin: auto;
+  display: block;
+  max-width: 675px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 161, ../sass/stylesheet.scss */
+.img-caption {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 695px;
+  max-width: 640px;
   text-align: center;
-  color: #fff;
-  padding: 25px 0;
+  color: rgba(18, 36, 78, 0.8);
+  padding: 20px 0;
 }
 
-/* line 163, ../sass/stylesheet.scss */
-.modal-content, #img-caption {
+/* line 171, ../sass/stylesheet.scss */
+.modal-content, .img-caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -293,7 +310,7 @@ default width = 800/5 = 160px;
   }
 }
 /* Close Button */
-/* line 179, ../sass/stylesheet.scss */
+/* line 187, ../sass/stylesheet.scss */
 .close {
   position: absolute;
   top: 15px;
@@ -304,7 +321,7 @@ default width = 800/5 = 160px;
   transition: 0.3s;
 }
 
-/* line 189, ../sass/stylesheet.scss */
+/* line 197, ../sass/stylesheet.scss */
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -314,7 +331,7 @@ default width = 800/5 = 160px;
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  /* line 203, ../sass/stylesheet.scss */
+  /* line 211, ../sass/stylesheet.scss */
   .modal-content {
     width: 100%;
   }

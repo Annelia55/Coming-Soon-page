@@ -38,72 +38,55 @@
                     <!-- COUNT UP ---------------------------------------------------------------------------------- -->
                     <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">timer</button>-->
 
-                    <!--&lt;!&ndash; modal window &ndash;&gt;-->
-                    <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
-                        <!--<div class="modal-dialog" role="document">-->
-                            <!--<div class="modal-content">-->
-                                <!--<div class="modal-header">-->
-                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                                        <!--<span aria-hidden="true">&times;</span>-->
-                                    <!--</button>-->
-                                    <!--<h4 class="modal-title" id="myModalLabel">The amount of time passed since some date</h4>-->
-                                <!--</div>-->
-                                <!--<div class="modal-body">-->
-                                    <!--<div id="counter">-->
-                                        <!--<br/>-->
-                                        <!--<br/>-->
-                                        <!--<p id="years">00</p>-->
-                                        <!--<p>years</p>-->
-                                        <!--<p id="days">00</p>-->
-                                        <!--<p>days</p>-->
-                                        <!--<p id="hours">00</p>-->
-                                        <!--<p>hours</p>-->
-                                        <!--<p id="minutes">00</p>-->
-                                        <!--<p>minutes</p>-->
-                                        <!--<p id="seconds">00</p>-->
-                                        <!--<p>seconds</p>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                    <!-- modal window -->
+                    <!--
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">The amount of time passed since some date</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="counter">
+                                        <br/>
+                                        <br/>
+                                        <p id="years">00</p>
+                                        <p>years</p>
+                                        <p id="days">00</p>
+                                        <p>days</p>
+                                        <p id="hours">00</p>
+                                        <p>hours</p>
+                                        <p id="minutes">00</p>
+                                        <p>minutes</p>
+                                        <p id="seconds">00</p>
+                                        <p>seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- /end count up ----------------------------------------------------------------------------- -->
 
 
                     <!-- ACCORDION GALLERY ------------------------------------------------------------------------- -->
 
-                    <div class="modal fade" tabindex="-1" role="dialog">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title">Modal title</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>One fine body&hellip;</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-
-
                     <div id="accordion">
                         <ul>
                             <li>
                                 <div class="image_title">
-                                    <p href="#">Regal Tang</p>
+                                    <p>Regal Tang</p>
                                 </div>
                                 <img id="myImg" src="images/regalTang.jpg"/>
                                 <!-- The Modal -->
                                 <div id="myModal" class="modal">
                                     <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                                    <div class="modal-bg">
-                                        <img class="modal-content" id="img01">
-                                        <div id="img-caption">
+                                    <div class="modal-content" >
+                                        <img id="img01" class="center-block">
+                                        <div class="img-caption">
                                             <p>
                                                 The Regal Tang is best known for its beautiful blue and black colorway complemented by a yellow tail.
                                                 This fish can grow up to 12 inches long, and it features small scales as well as a pointy nose.
@@ -114,39 +97,101 @@
                                         </div>
                                     </div>
                                 </div>
+                            </li>
 
-                            </li>
                             <li>
                                 <div class="image_title">
-                                    <a href="#">Rainbow Parrot</a>
+                                    <p>Rainbow Parrot</p>
                                 </div>
-                                <a href="#">
-                                    <img src="images/rainbowParrot.jpg"/>
-                                </a>
+                                <img id="myImg2" src="images/rainbowParrot.jpg"/>
+                                <!-- The Modal -->
+                                <div id="myModal2" class="modal">
+                                    <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+                                    <div class="modal-content" >
+                                        <img id="img02" class="center-block">
+                                        <div class="img-caption">
+                                            <p>
+                                                The Rainbow Parrot fish got its name thanks to its bird-like beak,
+                                                which it uses quite skillfully to eat small invertebrates found in coral.
+                                                The fish eats by nibbling on the coral, and it spits out the remains once
+                                                it is finished thus leaving quite a “mess” on the coral floor. As far as aesthetics are
+                                                concerned, the Rainbow Parrot fish’s body flaunts combinations of blue,
+                                                green purple and pink shades complemented by yellow spots.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
+
                             <li>
                                 <div class="image_title">
-                                    <a href="#">Blueface Angel</a>
+                                    <p>Blueface Angel</p>
                                 </div>
-                                <a href="#">
-                                    <img src="images/bluefaceAngel.jpg"/>
-                                </a>
+                                <img id="myImg3" src="images/bluefaceAngel.jpg"/>
+                                <!-- The Modal -->
+                                <div id="myModal3" class="modal">
+                                    <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+                                    <div class="modal-content" >
+                                        <img id="img03" class="center-block">
+                                        <div class="img-caption">
+                                            <p>
+                                                The Blueface Angelfish inhabits the shallow waters of the Indo-Pacific,
+                                                and it flaunts a spectacular combination of blue, yellow and pale blue shades.
+                                                However, young members of the species are recognized for their 6 vertical
+                                                white bars and pale blue lines, while their caudal fins flaunt 2 tones of blue.
+                                                This fish lives out its days among the coral reefs of the Maldives, Japan,
+                                                Taiwan and Indonesia, but it can also be found in lagoons at depths of up to 82 feet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
+
                             <li>
                                 <div class="image_title">
-                                    <a href="#">Pseudanthias Taeniatus</a>
+                                    <p>Pseudanthias Taeniatus</p>
                                 </div>
-                                <a href="#">
-                                    <img src="images/pseudanthiasTaeniatus.jpg"/>
-                                </a>
+                                <img id="myImg4" src="images/pseudanthiasTaeniatus.jpg"/>
+                                <!-- The Modal -->
+                                <div id="myModal4" class="modal">
+                                    <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+                                    <div class="modal-content" >
+                                        <img id="img04" class="center-block">
+                                        <div class="img-caption">
+                                            <p>
+                                                Pseudanthias Taeniatus is a beautiful red and white fish that can be found
+                                                in the Red Sea at depths ranging between 32 and 164 feet. This particular
+                                                species of fish can grow up to 5.1 inches in length, but even though it
+                                                is quite small, it is definitely one of the world’s most eye-catching sea dwellers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
+
                             <li>
                                 <div class="image_title">
-                                    <a href="#">Mandarin</a>
+                                    <p>Mandarin</p>
                                 </div>
-                                <a href="#">
-                                    <img src="images/mandarin.jpg"/>
-                                </a>
+                                <img id="myImg5" src="images/mandarin.jpg"/>
+                                <!-- The Modal -->
+                                <div id="myModal5" class="modal">
+                                    <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+                                    <div class="modal-content" >
+                                        <img id="img05" class="center-block">
+                                        <div class="img-caption">
+                                            <p>
+                                                Last but not least, we’re going to tell you a bit about the Mandarinfish,
+                                                which could very well be the most beautiful fish on Earth. Also known as the
+                                                “mandarin dragonet”, this stunning little creature lives in the Pacific,
+                                                specifically amongst reefs, and since it is quite small (2.6 inches) it
+                                                is not easily spotted in the wild. Its diet includes fish eggs, polychaete
+                                                worms and ostracods, and it is known to be quite difficult to keep in aquariums
+                                                because of its strict eating habits.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
