@@ -16,51 +16,6 @@ a {
     text-decoration: none;
   }
 }
-
-/* CONTENT */
-.fish {
-  max-width: 150px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.content {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.2);
-  @include border-radius(80px);
-  color: rgba(18, 36, 78, 0.90);
-  height: 1500px;
-  .title-content {
-    text-align: center;
-    h1 {
-      font-size: 60px;
-      color: rgba(18, 36, 78, 0.56);
-      font-weight: bold;
-      margin-top: 60px;
-      margin-bottom: 40px;
-    }
-    /* COUNT UP */
-    #counter {
-      p {
-        color: rgba(18, 36, 78, 0.60);
-        font-size: 22px;
-        display: inline-block;
-        font-weight: lighter;
-      }
-      #years,
-      #days,
-      #hours,
-      #minutes,
-      #seconds {
-        color: rgba(18, 36, 78, 0.80);
-        font-size: 42px;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-
 /* VIDEO BACKGROUND */
 video {
   position: fixed;
@@ -76,22 +31,89 @@ video {
   //background: url('...jpeg') no-repeat;
 }
 
+/* CONTENT */
+.fish {
+  max-width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.45);
+  @include border-radius(80px);
+  color: rgba(18, 36, 78, 0.90);
+  padding-bottom: 50px;
+  .title-content {
+    .header-content {
+      h1 {
+        text-align: center;
+        font-size: 62px;
+        color: rgba(18, 36, 78, 0.56);
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 60px;
+      }
+      .page_description {
+        color: rgba(18, 36, 78, 0.90);
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+        line-height: 24px;
+      }
+      /* COUNT UP */
+      #counter {
+        padding: 15px 20px;
+        margin: 0 auto;
+        p {
+          color: rgba(18, 36, 78, 0.70);
+          font-size: 22px;
+          display: inline-block;
+          font-weight: lighter;
+        }
+        #years,
+        #days,
+        #hours,
+        #minutes,
+        #seconds {
+          color: rgba(18, 36, 78, 0.80);
+          font-size: 42px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+body.modal-open #wrap{
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.modal-backdrop {background: #f7f7f7;}
+
+.close {
+  font-size: 50px;
+  display:block;
+}
 
 /* ACCORDION GALLERY
-
-Width of image = 640px
-total images = 5
-width of hovered image = 640px
-width of un-hovered image = 40px
-total container width = 640 + 40*4 = 800px;
-default width = 800/5 = 160px;
-
+    Width of image = 640px
+    total images = 5
+    width of hovered image = 640px
+    width of un-hovered image = 40px
+    total container width = 640 + 40*4 = 800px;
+    default width = 800/5 = 160px;
 */
 #accordion {
   max-width: 805px;
   height: auto;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
   @include border-radius(80px);
   @include box-shadow(0 0 10px 1px rgba(18, 36, 78, 0.60));
   .image_title {
@@ -101,6 +123,7 @@ default width = 800/5 = 160px;
     width: 640px;
   }
   .image_title p {
+    text-align: center;
     display: block;
     color: rgba(255, 255, 255, 0.91);
     text-decoration: none;
@@ -122,6 +145,79 @@ default width = 800/5 = 160px;
     img {
       display: block;
     }
+    /* MODAL WINDOW */
+    #myImg,
+    #myImg2,
+    #myImg3,
+    #myImg4,
+    #myImg5 {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .modal {
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.65);
+      .modal-content {
+        @include border-radius(80px);
+        margin: auto;
+        display: block;
+        max-width: 720px;
+        background-color: rgba(255, 255, 255, 0.8);
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        h2 {
+          text-align: center;
+          font-size: 22px;
+          color: rgba(18, 36, 78, 0.90);
+          font-weight: bold;
+          margin-top: 20px;
+        }
+        #img01,
+        #img02,
+        #img03,
+        #img04,
+        #img05 {
+          padding: 20px;
+          @include border-radius(80px);
+        }
+        .img-caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 640px;
+          text-align: center;
+          color: rgba(18, 36, 78, 0.80);
+          padding-bottom: 30px;
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+      }
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: rgba(18, 36, 78, 0.90);
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover,
+        &:focus {
+          color: #bbb;
+          text-decoration: rgba(18, 36, 78, 0.50);
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 #accordion ul:hover li {  //width of visible area of other images while hovering
@@ -130,80 +226,15 @@ default width = 800/5 = 160px;
 #accordion ul li:hover {  // width of full image
   width: 640px;
 }
-
-/* MODAL WINDOW - images */
-#myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
-  cursor: pointer;
-  transition: 0.3s;
-}
-#img01, #img02, #img03, #img04, #img05 {
-  padding-top: 16px;
-  @include border-radius(80px);
-}
-.modal {
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.modal-content {
-  @include border-radius(80px);
-  margin: auto;
-  display: block;
-  max-width: 675px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.img-caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 640px;
-  text-align: center;
-  color: rgba(18, 36, 78, 0.80);
-  padding: 20px 0;
-}
-
-.modal-content, .img-caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
+/* modal accordion*/
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
-/* Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
 
 
 /* 100% Image Width on Smaller Screens */

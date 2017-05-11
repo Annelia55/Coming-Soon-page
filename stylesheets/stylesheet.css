@@ -95,58 +95,8 @@ a:hover {
   text-decoration: none;
 }
 
-/* CONTENT */
-/* line 21, ../sass/stylesheet.scss */
-.fish {
-  max-width: 150px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* line 26, ../sass/stylesheet.scss */
-.content {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.2);
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  border-radius: 80px;
-  color: rgba(18, 36, 78, 0.9);
-  height: 1500px;
-}
-/* line 33, ../sass/stylesheet.scss */
-.content .title-content {
-  text-align: center;
-  /* COUNT UP */
-}
-/* line 35, ../sass/stylesheet.scss */
-.content .title-content h1 {
-  font-size: 60px;
-  color: rgba(18, 36, 78, 0.56);
-  font-weight: bold;
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-/* line 44, ../sass/stylesheet.scss */
-.content .title-content #counter p {
-  color: rgba(18, 36, 78, 0.6);
-  font-size: 22px;
-  display: inline-block;
-  font-weight: lighter;
-}
-/* line 50, ../sass/stylesheet.scss */
-.content .title-content #counter #years,
-.content .title-content #counter #days,
-.content .title-content #counter #hours,
-.content .title-content #counter #minutes,
-.content .title-content #counter #seconds {
-  color: rgba(18, 36, 78, 0.8);
-  font-size: 42px;
-  font-weight: bold;
-}
-
 /* VIDEO BACKGROUND */
-/* line 65, ../sass/stylesheet.scss */
+/* line 20, ../sass/stylesheet.scss */
 video {
   position: fixed;
   top: 50%;
@@ -160,22 +110,104 @@ video {
   background-size: cover;
 }
 
+/* CONTENT */
+/* line 35, ../sass/stylesheet.scss */
+.fish {
+  max-width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 40, ../sass/stylesheet.scss */
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.45);
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  color: rgba(18, 36, 78, 0.9);
+  padding-bottom: 50px;
+}
+/* line 48, ../sass/stylesheet.scss */
+.content .title-content .header-content {
+  /* COUNT UP */
+}
+/* line 49, ../sass/stylesheet.scss */
+.content .title-content .header-content h1 {
+  text-align: center;
+  font-size: 62px;
+  color: rgba(18, 36, 78, 0.56);
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 60px;
+}
+/* line 57, ../sass/stylesheet.scss */
+.content .title-content .header-content .page_description {
+  color: rgba(18, 36, 78, 0.9);
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 24px;
+}
+/* line 66, ../sass/stylesheet.scss */
+.content .title-content .header-content #counter {
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+/* line 69, ../sass/stylesheet.scss */
+.content .title-content .header-content #counter p {
+  color: rgba(18, 36, 78, 0.7);
+  font-size: 22px;
+  display: inline-block;
+  font-weight: lighter;
+}
+/* line 75, ../sass/stylesheet.scss */
+.content .title-content .header-content #counter #years,
+.content .title-content .header-content #counter #days,
+.content .title-content .header-content #counter #hours,
+.content .title-content .header-content #counter #minutes,
+.content .title-content .header-content #counter #seconds {
+  color: rgba(18, 36, 78, 0.8);
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/* line 89, ../sass/stylesheet.scss */
+body.modal-open #wrap {
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+/* line 97, ../sass/stylesheet.scss */
+.modal-backdrop {
+  background: #f7f7f7;
+}
+
+/* line 99, ../sass/stylesheet.scss */
+.close {
+  font-size: 50px;
+  display: block;
+}
+
 /* ACCORDION GALLERY
-
-Width of image = 640px
-total images = 5
-width of hovered image = 640px
-width of un-hovered image = 40px
-total container width = 640 + 40*4 = 800px;
-default width = 800/5 = 160px;
-
+    Width of image = 640px
+    total images = 5
+    width of hovered image = 640px
+    width of un-hovered image = 40px
+    total container width = 640 + 40*4 = 800px;
+    default width = 800/5 = 160px;
 */
-/* line 90, ../sass/stylesheet.scss */
+/* line 112, ../sass/stylesheet.scss */
 #accordion {
   max-width: 805px;
   height: auto;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
@@ -183,7 +215,7 @@ default width = 800/5 = 160px;
   -webkit-box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
   box-shadow: 0 0 10px 1px rgba(18, 36, 78, 0.6);
 }
-/* line 97, ../sass/stylesheet.scss */
+/* line 119, ../sass/stylesheet.scss */
 #accordion .image_title {
   background: rgba(18, 36, 78, 0.56);
   position: absolute;
@@ -191,19 +223,20 @@ default width = 800/5 = 160px;
   bottom: 0;
   width: 640px;
 }
-/* line 103, ../sass/stylesheet.scss */
+/* line 125, ../sass/stylesheet.scss */
 #accordion .image_title p {
+  text-align: center;
   display: block;
   color: rgba(255, 255, 255, 0.91);
   text-decoration: none;
   padding: 20px;
   font-size: 16px;
 }
-/* line 110, ../sass/stylesheet.scss */
+/* line 133, ../sass/stylesheet.scss */
 #accordion ul {
   width: 2000px;
 }
-/* line 113, ../sass/stylesheet.scss */
+/* line 136, ../sass/stylesheet.scss */
 #accordion li {
   position: relative;
   display: block;
@@ -220,39 +253,23 @@ default width = 800/5 = 160px;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
+  /* MODAL WINDOW */
 }
-/* line 122, ../sass/stylesheet.scss */
+/* line 145, ../sass/stylesheet.scss */
 #accordion li img {
   display: block;
 }
-
-/* line 127, ../sass/stylesheet.scss */
-#accordion ul:hover li {
-  width: 40px;
-}
-
-/* line 130, ../sass/stylesheet.scss */
-#accordion ul li:hover {
-  width: 640px;
-}
-
-/* MODAL WINDOW - images */
-/* line 135, ../sass/stylesheet.scss */
-#myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
+/* line 149, ../sass/stylesheet.scss */
+#accordion li #myImg,
+#accordion li #myImg2,
+#accordion li #myImg3,
+#accordion li #myImg4,
+#accordion li #myImg5 {
   cursor: pointer;
   transition: 0.3s;
 }
-
-/* line 139, ../sass/stylesheet.scss */
-#img01, #img02, #img03, #img04, #img05 {
-  padding-top: 16px;
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  border-radius: 80px;
-}
-
-/* line 143, ../sass/stylesheet.scss */
-.modal {
+/* line 157, ../sass/stylesheet.scss */
+#accordion li .modal {
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -260,39 +277,83 @@ default width = 800/5 = 160px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
 }
-
-/* line 153, ../sass/stylesheet.scss */
-.modal-content {
+/* line 166, ../sass/stylesheet.scss */
+#accordion li .modal .modal-content {
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
   margin: auto;
   display: block;
-  max-width: 675px;
+  max-width: 720px;
   background-color: rgba(255, 255, 255, 0.8);
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
-
-/* line 161, ../sass/stylesheet.scss */
-.img-caption {
+/* line 176, ../sass/stylesheet.scss */
+#accordion li .modal .modal-content h2 {
+  text-align: center;
+  font-size: 22px;
+  color: rgba(18, 36, 78, 0.9);
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* line 183, ../sass/stylesheet.scss */
+#accordion li .modal .modal-content #img01,
+#accordion li .modal .modal-content #img02,
+#accordion li .modal .modal-content #img03,
+#accordion li .modal .modal-content #img04,
+#accordion li .modal .modal-content #img05 {
+  padding: 20px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+}
+/* line 191, ../sass/stylesheet.scss */
+#accordion li .modal .modal-content .img-caption {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 640px;
   text-align: center;
   color: rgba(18, 36, 78, 0.8);
-  padding: 20px 0;
-}
-
-/* line 171, ../sass/stylesheet.scss */
-.modal-content, .img-caption {
+  padding-bottom: 30px;
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+/* line 205, ../sass/stylesheet.scss */
+#accordion li .modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: rgba(18, 36, 78, 0.9);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/* line 213, ../sass/stylesheet.scss */
+#accordion li .modal .close:hover, #accordion li .modal .close:focus {
+  color: #bbb;
+  text-decoration: rgba(18, 36, 78, 0.5);
+  cursor: pointer;
+}
 
+/* line 223, ../sass/stylesheet.scss */
+#accordion ul:hover li {
+  width: 40px;
+}
+
+/* line 226, ../sass/stylesheet.scss */
+#accordion ul li:hover {
+  width: 640px;
+}
+
+/* modal accordion*/
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(0);
@@ -309,29 +370,9 @@ default width = 800/5 = 160px;
     transform: scale(1);
   }
 }
-/* Close Button */
-/* line 187, ../sass/stylesheet.scss */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-/* line 197, ../sass/stylesheet.scss */
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  /* line 211, ../sass/stylesheet.scss */
+  /* line 242, ../sass/stylesheet.scss */
   .modal-content {
     width: 100%;
   }
