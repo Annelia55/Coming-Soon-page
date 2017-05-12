@@ -3,9 +3,10 @@ $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop(); // this = window. It tells how far it is scrolled from the top
     $('.fish').css({
-        'transform' : 'translate(0px, '+ wScroll /1.5 +'%)'
+        'transform' : 'translate(0px, '+ wScroll /1.2 +'%)'
     });
 });
+
 
 
 /* COUNT UP */
@@ -85,3 +86,33 @@ span.onclick = function() {
     modal.style.display = "none";
 };
 
+
+/* SIDEBAR */
+$(document).ready(function () {
+    var trigger = $('.hamburger'),
+        overlay = $('.overlay'),
+        isClosed = false;
+
+    trigger.click(function () {
+        hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+        if (isClosed == true) {
+            overlay.hide();
+            trigger.removeClass('is-open');
+            trigger.addClass('is-closed');
+            isClosed = false;
+        } else {
+            overlay.show();
+            trigger.removeClass('is-closed');
+            trigger.addClass('is-open');
+            isClosed = true;
+        }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+    });
+});
