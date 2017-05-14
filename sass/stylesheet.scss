@@ -2,13 +2,12 @@
 
 @include font-face("???", font-files("???.ttf"));
 
-/* for Bootstrap */
+/* ----------------------------------------------------- GLOBAL ----------------------------------------------------- */
 .no-margin {margin: 0 !important}
 .no-gutter > [class*='col-'] {
   padding-right:0;
   padding-left:0;
 }
-/**/
 .left {float: left;}
 .right {float: right;}
 a {
@@ -16,7 +15,15 @@ a {
     text-decoration: none;
   }
 }
-/* VIDEO BACKGROUND */
+body {
+  font-family: Times;
+  position: relative;
+  overflow-x: hidden;
+}
+/* /end clobal------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------- VIDEO BACKGROUND ---------------------------------------------- */
 video {
   position: fixed;
   top: 50%;
@@ -30,11 +37,14 @@ video {
   background-size: cover;
   background: url('../images/bg-video.jpg') no-repeat;
 }
+/* /end video background -------------------------------------------------------------------------------------------- */
 
-/* CONTENT */
+
+/* ------------------------------------------------------ CONTENT --------------------------------------------------- */
 .container-content {
   position: relative;
 }
+/* FISH */
 .fish {
   max-width: 150px;
   margin-top: 100px;
@@ -66,17 +76,19 @@ video {
       }
   }
 }
+/* /end content ----------------------------------------------------------------------------------------------------- */
 
-/* ACCORDION GALLERY
-    Width of image = 640px
-    total images = 5
-    width of hovered image = 640px
-    width of un-hovered image = 40px
-    total container width = 640 + 40*4 = 800px;
-    default width = 800/5 = 160px;
-*/
+
+/* ----------------------------------------------- ACCORDION GALLERY ---------------------------------------------------
+                                                Width of image = 640px
+                                                total images = 5
+                                                width of hovered image = 640px
+                                                width of un-hovered image = 40px
+                                                total container width = 640 + 40*4 = 800px;
+                                                default width = 800/5 = 160px;                                        */
+
 #accordion {
-  max-width: 805px;
+  max-width: 800px;
   height: auto;
   overflow: hidden;
   margin: 50px auto 20px auto;
@@ -111,7 +123,7 @@ video {
     img {
       display: block;
     }
-    /* MODAL WINDOW */
+    /* ---  Modal window --- */
     #myImg,
     #myImg2,
     #myImg3,
@@ -201,9 +213,10 @@ video {
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
+/* /end accordion gallery ------------------------------------------------------------------------------------------- */
 
 
-/* COUNT UP */
+/* ---------------------------------------------------- COUNT UP ---------------------------------------------------- */
 #counter {
   padding: 10px 20px;
   margin: 0 auto;
@@ -227,12 +240,10 @@ video {
     font-weight: bold;
   }
 }
+/* /end count up----------------------------------------------------------------------------------------------------- */
 
-/* SIDEBAR */
-body {
-  position: relative;
-  overflow-x: hidden;
-}
+
+/* ----------------------------------------------------- SIDEBAR ---------------------------------------------------- */
 #wrapper {
   @include transition(.5s); /* moving "x" to the right, while opening sidebar */
 }
@@ -301,7 +312,7 @@ body {
   @include transition(0.2s, ease-in);
 
 }
-/* Hamburger-Cross */
+/* --- Hamburger-Cross --- */
 .hamburger {
   position: fixed;
   top: 20px;
@@ -318,7 +329,6 @@ body {
     outline: none;
   }
 }
-
 .hamburger.is-closed:before {
   content: '';
   display: block;
@@ -412,7 +422,9 @@ body {
   -webkit-transform: translate3d(-100px,0,0);
   @include transition(0.35s, ease-in-out);
 }
-/* Overlay */
+/* /end hamburger --- */
+
+/* --- Overlay --- */
 .overlay {
   position: fixed;
   display: none;
@@ -425,8 +437,12 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
+/* /end overlay --- */
+/* /end sidebar ----------------------------------------------------------------------------------------------------- */
 
-/* MOVING BLOCKS */
+
+
+/* -------------------------------------------------- MOVING BLOCKS ------------------------------------------------- */
 #features {
   .feature {
     @include transition(2s, ease-in-out);
@@ -479,6 +495,8 @@ body {
     }
   }
 }
+/* /end moving blocks ------------------------------------------------------------------------------------------------ */
+
 
 
 /* ---------------------------------------------------------------------------------------------------------------------

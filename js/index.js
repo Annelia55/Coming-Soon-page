@@ -8,7 +8,6 @@ $(window).scroll(function(){
 });
 
 
-
 /* COUNT UP */
 window.onload=function() {
     // Month,Day,Year,Hour,Minute,Second
