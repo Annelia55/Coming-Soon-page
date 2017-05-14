@@ -96,7 +96,7 @@ video {
     font-size: 16px;
   }
   ul {       //A small hack to prevent flickering on some browsers. This will give sample space to the last item to move instead of falling down/flickering during hovers
-    width: 1000px;
+    width: 2000px;
   }
   li {
     position: relative;
@@ -425,6 +425,60 @@ body {
   z-index: 1;
 }
 
+/* MOVING BLOCKS */
+#features {
+  margin-top:50px;
+  .feature {
+    @include transition(2s, ease-in-out);
+    background: rgba(255, 255, 255, 0.4);
+    text-align:center;
+    padding:20px;
+    @include border-radius(20px);
+    &:hover {
+      background: rgba(18, 36, 78, 0.3);
+      -webkit-transform: translate(0,2em);
+      -moz-transform: translate(0,2em);
+      -o-transform: translate(0,2em);
+      -ms-transform: translate(0,2em);
+      transform: translate(0,2em);
+      p {
+        @include transition(1s);
+        color: rgba(255, 255, 255, 0.8);
+      }
+      i{
+        @include transition(1s, ease-in-out);
+        color: rgba(18, 36, 78, 0.56);
+        border-color: rgba(18, 36, 78, 0.56);
+        background: rgba(255, 255, 255, 0.8);
+      }
+      .title_border {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 50%;
+      }
+    }
+    p {
+      @include transition(3s);
+      color: rgba(18, 36, 78, 0.60);
+      padding: 10px 40px;
+    }
+    i{
+      font-size:100px;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(18, 36, 78, 0.56);
+      padding:20px;
+      border-radius:50%;
+      border: 3px solid transparent;
+    }
+    .title_border {
+      @include transition(1s, ease-in-out);
+      width: 0%;
+      height: 3px;
+      background: rgba(18, 36, 78, 0.25);
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+  }
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
