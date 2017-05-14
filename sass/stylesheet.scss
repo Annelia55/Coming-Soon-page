@@ -472,6 +472,9 @@ video {
         width: 50%;
       }
     }
+    a {
+      cursor: pointer;
+    }
     p {
       @include transition(3s);
       color: rgba(18, 36, 78, 0.60);

@@ -716,6 +716,10 @@ video {
   width: 50%;
 }
 /* line 475, ../sass/stylesheet.scss */
+#features .feature a {
+  cursor: pointer;
+}
+/* line 478, ../sass/stylesheet.scss */
 #features .feature p {
   -moz-transition: 3s;
   -o-transition: 3s;
@@ -724,7 +728,7 @@ video {
   color: rgba(18, 36, 78, 0.6);
   padding: 10px 40px;
 }
-/* line 480, ../sass/stylesheet.scss */
+/* line 483, ../sass/stylesheet.scss */
 #features .feature i {
   font-size: 100px;
   color: rgba(255, 255, 255, 0.6);
@@ -733,7 +737,7 @@ video {
   border-radius: 50%;
   border: 3px solid transparent;
 }
-/* line 488, ../sass/stylesheet.scss */
+/* line 491, ../sass/stylesheet.scss */
 #features .feature .title_border {
   -moz-transition: 1s, ease-in-out;
   -o-transition: 1s, ease-in-out;
@@ -751,73 +755,73 @@ video {
                                                       @media
 --------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 991px) {
-  /* line 506, ../sass/stylesheet.scss */
+  /* line 509, ../sass/stylesheet.scss */
   .fish {
     max-width: 120px;
   }
 
-  /* line 511, ../sass/stylesheet.scss */
+  /* line 514, ../sass/stylesheet.scss */
   .content .title-content h1 {
     font-size: 50px;
     margin-top: 40px;
   }
-  /* line 515, ../sass/stylesheet.scss */
+  /* line 518, ../sass/stylesheet.scss */
   .content .title-content .page_description {
     margin-bottom: 5px;
     padding: 5px 5px;
   }
 
   /* MOVING BLOCKS */
-  /* line 523, ../sass/stylesheet.scss */
+  /* line 526, ../sass/stylesheet.scss */
   #features .feature {
     padding: 5px;
   }
-  /* line 525, ../sass/stylesheet.scss */
+  /* line 528, ../sass/stylesheet.scss */
   #features .feature i {
     font-size: 80px;
   }
-  /* line 528, ../sass/stylesheet.scss */
+  /* line 531, ../sass/stylesheet.scss */
   #features .feature p {
     padding: 5px 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 536, ../sass/stylesheet.scss */
+  /* line 539, ../sass/stylesheet.scss */
   .fish {
     display: none;
   }
 
-  /* line 541, ../sass/stylesheet.scss */
+  /* line 544, ../sass/stylesheet.scss */
   .content .title-content h1 {
     font-size: 44px;
     margin-top: 40px;
   }
-  /* line 545, ../sass/stylesheet.scss */
+  /* line 548, ../sass/stylesheet.scss */
   .content .title-content .page_description {
     font-size: 16px;
   }
 
-  /* line 550, ../sass/stylesheet.scss */
+  /* line 553, ../sass/stylesheet.scss */
   #accordion li .modal .modal-content {
     margin-left: 5px;
     margin-right: 5px;
   }
 
   /* MOVING BLOCKS */
-  /* line 556, ../sass/stylesheet.scss */
+  /* line 559, ../sass/stylesheet.scss */
   #features .feature {
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 500px) {
   /* MODAL WINDOW */
-  /* line 563, ../sass/stylesheet.scss */
+  /* line 566, ../sass/stylesheet.scss */
   #accordion li .modal .modal-content h2 {
     font-size: 18px;
     margin-top: 15px;
   }
 
-  /* line 567, ../sass/stylesheet.scss */
+  /* line 570, ../sass/stylesheet.scss */
   #accordion li .modal .modal-content #img01,
   #accordion li .modal .modal-content #img02,
   #accordion li .modal .modal-content #img03,
@@ -828,33 +832,33 @@ video {
 }
 @media only screen and (max-width: 355px) {
   /* SIDEBAR */
-  /* line 577, ../sass/stylesheet.scss */
+  /* line 580, ../sass/stylesheet.scss */
   #wrapper.toggled #sidebar-wrapper {
     width: 250px;
   }
 
-  /* line 580, ../sass/stylesheet.scss */
+  /* line 583, ../sass/stylesheet.scss */
   .sidebar-nav {
     width: 250px;
   }
 
-  /* line 583, ../sass/stylesheet.scss */
+  /* line 586, ../sass/stylesheet.scss */
   #wrapper.toggled {
     padding-left: 250px;
     /* position of "x" in open sidebar */
   }
 
   /* COUNT UP */
-  /* line 587, ../sass/stylesheet.scss */
+  /* line 590, ../sass/stylesheet.scss */
   #counter {
     padding: 5px 10px;
     color: rgba(18, 36, 78, 0.7);
   }
-  /* line 590, ../sass/stylesheet.scss */
+  /* line 593, ../sass/stylesheet.scss */
   #counter p {
     font-size: 12px;
   }
-  /* line 593, ../sass/stylesheet.scss */
+  /* line 596, ../sass/stylesheet.scss */
   #counter #years,
   #counter #days,
   #counter #hours,
