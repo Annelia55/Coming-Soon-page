@@ -21,266 +21,265 @@
     <![endif]-->
 
 </head>
-    <body>
-    <div class="container-fluid">
-        <div class="row">
-            <video id="videoPlayer" autoplay loop>
-                <source id="mp4Source" src="video/bg-video.mp4" type="video/mp4">
-            </video>
-            <div class="col-md-2 col-sm-2 col-xs-hidden">
-                <img class="img-responsive fish" src="images/animated-fish.gif" alt="fish"/>
+<body>
 
-                <!-- SIDEBAR --------------------------------------------------------------------------------------- -->
-                <div id="wrapper">
-                    <div class="overlay"></div>
-                    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-                        <ul class="nav sidebar-nav">
-                            <li class="sidebar-brand">
-                                <p>Page is existing for: </p>
-                            </li>
-                            <li>
-                                <!-- COUNT UP ---------------------------------------------------------------------- -->
-                                <div id="counter">
-                                    <p id="years">00</p>
-                                    <p>years</p>
-                                    <p id="days">00</p>
-                                    <p>days</p>
-                                    <p id="hours">00</p>
-                                    <p>hours</p>
-                                    <p id="minutes">00</p>
-                                    <p>min</p>
-                                    <p id="seconds">00</p>
-                                    <p>sec</p>
-                                </div>
-                                <!-- /end count up ----------------------------------------------------------------- -->
-                            </li>
-                        </ul>
-                    </nav>
-                    <div id="page-content-wrapper">
-                        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                            <span class="hamb-top"></span>
-                            <span class="hamb-middle"></span>
-                            <span class="hamb-bottom"></span>
-                        </button>
-                    </div>
+<div class="container-fluid">
+    <div class="row container-content">
+        <video id="videoPlayer" autoplay loop>
+            <source id="mp4Source" src="video/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="col-md-2 col-sm-2 hidden-xs">
+            <img class="img-responsive fish" src="images/animated-fish.gif" alt="fish"/>
+
+            <!-- SIDEBAR --------------------------------------------------------------------------------------- -->
+            <div id="wrapper">
+                <div class="overlay"></div>
+                <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                    <ul class="nav sidebar-nav">
+                        <li class="sidebar-brand">
+                            <p>Page is existing for: </p>
+                        </li>
+                        <li>
+                            <!-- COUNT UP ---------------------------------------------------------------------- -->
+                            <div id="counter">
+                                <p id="years">00</p>
+                                <p>years</p>
+                                <p id="days">00</p>
+                                <p>days</p>
+                                <p id="hours">00</p>
+                                <p>hours</p>
+                                <p id="minutes">00</p>
+                                <p>min</p>
+                                <p id="seconds">00</p>
+                                <p>sec</p>
+                            </div>
+                            <!-- /end count up ----------------------------------------------------------------- -->
+                        </li>
+                    </ul>
+                </nav>
+                <div id="page-content-wrapper">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
                 </div>
-                <!-- //end sidebar --------------------------------------------------------------------------------- -->
             </div>
-
-
-            <!-- CONTENT ROW---------------------------------------------------------------------------------------- -->
-            <div class="col-md-8 col-sm-9 col-xs-12 content">
-                <!-- TITLE-CONTENT ROW------------------------------------------------------------------------------ -->
-                <div class="title-content">
-                    <div class="header-content">
-                        <h1>SEA WORLD</h1>
-
-                        <!-- ACCORDION GALLERY --------------------------------------------------------------------- -->
-                        <div id="accordion">
-                            <ul>
-                                <li>
-                                    <div class="image_title">
-                                        <p>Regal Tang</p>
-                                    </div>
-                                    <img id="myImg" src="images/regalTang.jpg"/>
-                                    <!-- The Modal -->
-                                    <div id="myModal1" class="modal">
-                                        <div class="modal-content" >
-                                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                                            <h2>Regal Tang</h2>
-                                            <img id="img01" class="center-block img-responsive">
-                                            <div class="img-caption">
-                                                <p>
-                                                    The Regal Tang is best known for its beautiful blue and black colorway
-                                                    complemented by a yellow tail. This fish can grow up to 12 inches long,
-                                                    and it features small scales as well as a pointy nose. Young regal tangs
-                                                    feed mostly on plankton, while older specimens are omnivorous so they
-                                                    sometimes nibble on algae. Since this fish emits a strong odor, it is
-                                                    often used as bait. However, due to its spectacular beauty, the Regal
-                                                    Tang is also found in aquariums.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="image_title">
-                                        <p>Rainbow Parrot</p>
-                                    </div>
-                                    <img id="myImg2" src="images/rainbowParrot.jpg"/>
-                                    <!-- The Modal -->
-                                    <div id="myModal2" class="modal">
-                                        <div class="modal-content" >
-                                            <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
-                                            <h2>Rainbow Parrot</h2>
-                                            <img id="img02" class="center-block img-responsive">
-                                            <div class="img-caption">
-                                                <p>
-                                                    The Rainbow Parrot fish got its name thanks to its bird-like beak,
-                                                    which it uses quite skillfully to eat small invertebrates found in
-                                                    coral. The fish eats by nibbling on the coral, and it spits out the
-                                                    remains once it is finished thus leaving quite a “mess” on the coral
-                                                    floor. As far as aesthetics are concerned, the Rainbow Parrot fish’s
-                                                    body flaunts combinations of blue, green purple and pink shades
-                                                    complemented by yellow spots.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="image_title">
-                                        <p>Blueface Angel</p>
-                                    </div>
-                                    <img id="myImg3" src="images/bluefaceAngel.jpg"/>
-                                    <!-- The Modal -->
-                                    <div id="myModal3" class="modal">
-                                        <div class="modal-content" >
-                                            <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
-                                            <h2>Blueface Angel</h2>
-                                            <img id="img03" class="center-block img-responsive">
-                                            <div class="img-caption">
-                                                <p>
-                                                    The Blueface Angelfish inhabits the shallow waters of the Indo-Pacific,
-                                                    and it flaunts a spectacular combination of blue, yellow and pale
-                                                    blue shades. However, young members of the species are recognized for
-                                                    their 6 vertical white bars and pale blue lines, while their caudal
-                                                    fins flaunt 2 tones of blue. This fish lives out its days among the
-                                                    coral reefs of the Maldives, Japan, Taiwan and Indonesia, but it can
-                                                    also be found in lagoons at depths of up to 82 feet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="image_title">
-                                        <p>Pseudanthias Taeniatus</p>
-                                    </div>
-                                    <img id="myImg4" src="images/pseudanthiasTaeniatus.jpg"/>
-                                    <!-- The Modal -->
-                                    <div id="myModal4" class="modal">
-                                        <div class="modal-content" >
-                                            <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
-                                            <h2>Pseudanthias Taeniatus</h2>
-                                            <img id="img04" class="center-block img-responsive">
-                                            <div class="img-caption">
-                                                <p>
-                                                    Pseudanthias Taeniatus is a beautiful red and white fish that can be
-                                                    found in the Red Sea at depths ranging between 32 and 164 feet. This
-                                                    particular species of fish can grow up to 5.1 inches in length, but
-                                                    even though it is quite small, it is definitely one of the world’s
-                                                    most eye-catching sea dwellers.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="image_title">
-                                        <p>Mandarin</p>
-                                    </div>
-                                    <img id="myImg5" src="images/mandarin.jpg"/>
-                                    <!-- The Modal -->
-                                    <div id="myModal5" class="modal">
-                                        <div class="modal-content" >
-                                            <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
-                                            <h2>Mandarin</h2>
-                                            <img id="img05" class="center-block img-responsive">
-                                            <div class="img-caption">
-                                                <p>
-                                                    Last but not least, we’re going to tell you a bit about the Mandarinfish,
-                                                    which could very well be the most beautiful fish on Earth. Also known
-                                                    as the “mandarin dragonet”, this stunning little creature lives in
-                                                    the Pacific, specifically amongst reefs, and since it is quite small
-                                                    (2.6 inches) it is not easily spotted in the wild. Its diet includes
-                                                    fish eggs, polychaete worms and ostracods, and it is known to be quite
-                                                    difficult to keep in aquariums because of its strict eating habits.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- //end accordion galley ---------------------------------------------------------------- -->
-
-                        <p class="page_description">
-                            Suspendisse tempus mauris in nunc tincidunt cursus. Vivamus nec dolor vel ligula interdum
-                            efficitur non aliquam tortor. Duis vel varius purus. Nunc neque lectus, blandit sit amet
-                            fermentum in, euismod at ipsum. Nunc pharetra elit ac feugiat placerat. Morbi tristique
-                            pharetra vestibulum. Nunc at nisi scelerisque, malesuada eros in, viverra massa. Donec non
-                            metus ultrices velit ultrices pharetra. Suspendisse tortor ipsum, bibendum ac dignissim ac,
-                            sollicitudin non libero. Donec nulla nibh, ultricies vel interdum sit amet, euismod in metus.
-                            In ut ipsum eleifend, fringilla nisl a, pellentesque eros. Fusce interdum nunc nec urna
-                            scelerisque, ut feugiat enim sollicitudin. Integer aliquam neque sit amet neque congue mattis.
-                            Aliquam erat volutpat. Phasellus sed aliquet massa. Pellentesque ac efficitur dolor.
-                            Pellentesque ac mi libero. Aliquam consectetur, arcu et ultrices auctor, orci nunc suscipit
-                            sem, ullamcorper vestibulum quam nunc eget orci. Donec sit amet odio porta, pretium ex sed,
-                            feugiat nisi. Sed vestibulum ante mollis ligula varius volutpat. Maecenas id dui nec ante
-                            pellentesque sodales. Vestibulum vitae libero molestie, posuere sapien ut, viverra ipsum.
-                            Nullam mattis pulvinar ipsum eu ultrices. Nulla in turpis ac mauris bibendum interdum.
-                            Pellentesque sed suscipit lectus, non rutrum justo. Phasellus eu viverra nisl, auctor tempor
-                            ex. Etiam sed consectetur odio. Ut lobortis lectus ligula, at efficitur mi blandit nec ibenduma.
-                            Curabitur dapibus posuere tortor, eget iaculis erat venenatis vitae. Fusce in leo euismod,
-                            lacinia augue non, tempus lacus. Donec risus turpis, consectetur at porta id, dictum ac mauris.
-                            Vestibulum congue ornare consectetur. Sed rutrum sit amet nulla in posuere. Sed congue iaculis
-                            blandit. Etiam lectus arcu, varius quis euismod tempor, vestibulum id risus tinditmon.
-                            Suspendisse tempus mauris in nunc tincidunt cursus. Vivamus nec dolor vel ligula interdum
-                            efficitur non aliquam tortor. Duis vel varius purus. Nunc neque lectus, blandit sit amet
-                            fermentum in, euismod at ipsum. Nunc pharetra elit ac feugiat placerat. Morbi tristique
-                            pharetra vestibulum. Nunc at nisi scelerisque, malesuada eros in, viverra massa. Donec non
-                            metus ultrices velit ultrices pharetra. Suspendisse tortor ipsum, bibendum ac dignissim ac,
-                            sollicitudin non libero. Donec nulla nibh, ultricies vel interdum sit amet, euismod in metus.
-                            In ut ipsum eleifend, fringilla nisl a, pellentesque eros. Fusce interdum nunc nec urna
-                            scelerisque, ut feugiat enim sollicitudin. Integer aliquam neque sit amet neque congue mattis.
-                        </p>
-                    </div>
-
-                    <!-- MOVING BLOCKS ----------------------------------------------------------------------------- -->
-                    <div id="features">
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <i class="glyphicon glyphicon-camera"></i>
-                                <div class="title_border"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <i class="glyphicon glyphicon-gift"></i>
-                                <div class="title_border"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <i class="glyphicon glyphicon-globe"></i>
-                                <div class="title_border"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /end moving blocks ----------------------------------------------------------------------------- -->
-                </div>
-                <!-- /end title-content row ------------------------------------------------------------------------ -->
-            </div>
-            <!-- /end content row ---------------------------------------------------------------------------------- -->
+            <!-- //end sidebar --------------------------------------------------------------------------------- -->
         </div>
+
+        <!-- CONTENT ROW---------------------------------------------------------------------------------------- -->
+        <div class="col-md-8 col-sm-9 col-xs-12 content">
+            <!-- TITLE-CONTENT --------------------------------------------------------------------------------- -->
+            <div class="title-content">
+                <h1>SEA WORLD</h1>
+
+                <!-- ACCORDION GALLERY ------------------------------------------------------------------------- -->
+                <div id="accordion">
+                    <ul>
+                        <li>
+                            <div class="image_title">
+                                <p>Regal Tang</p>
+                            </div>
+                            <img id="myImg" src="images/regalTang.jpg"/>
+                            <!-- The Modal -->
+                            <div id="myModal1" class="modal">
+                                <div class="modal-content" >
+                                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                                    <h2>Regal Tang</h2>
+                                    <img id="img01" class="center-block img-responsive">
+                                    <div class="img-caption">
+                                        <p>
+                                            The Regal Tang is best known for its beautiful blue and black colorway
+                                            complemented by a yellow tail. This fish can grow up to 12 inches long,
+                                            and it features small scales as well as a pointy nose. Young regal tangs
+                                            feed mostly on plankton, while older specimens are omnivorous so they
+                                            sometimes nibble on algae. Since this fish emits a strong odor, it is
+                                            often used as bait. However, due to its spectacular beauty, the Regal
+                                            Tang is also found in aquariums.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="image_title">
+                                <p>Rainbow Parrot</p>
+                            </div>
+                            <img id="myImg2" src="images/rainbowParrot.jpg"/>
+                            <!-- The Modal -->
+                            <div id="myModal2" class="modal">
+                                <div class="modal-content" >
+                                    <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+                                    <h2>Rainbow Parrot</h2>
+                                    <img id="img02" class="center-block img-responsive">
+                                    <div class="img-caption">
+                                        <p>
+                                            The Rainbow Parrot fish got its name thanks to its bird-like beak,
+                                            which it uses quite skillfully to eat small invertebrates found in
+                                            coral. The fish eats by nibbling on the coral, and it spits out the
+                                            remains once it is finished thus leaving quite a “mess” on the coral
+                                            floor. As far as aesthetics are concerned, the Rainbow Parrot fish’s
+                                            body flaunts combinations of blue, green purple and pink shades
+                                            complemented by yellow spots.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="image_title">
+                                <p>Blueface Angel</p>
+                            </div>
+                            <img id="myImg3" src="images/bluefaceAngel.jpg"/>
+                            <!-- The Modal -->
+                            <div id="myModal3" class="modal">
+                                <div class="modal-content" >
+                                    <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+                                    <h2>Blueface Angel</h2>
+                                    <img id="img03" class="center-block img-responsive">
+                                    <div class="img-caption">
+                                        <p>
+                                            The Blueface Angelfish inhabits the shallow waters of the Indo-Pacific,
+                                            and it flaunts a spectacular combination of blue, yellow and pale
+                                            blue shades. However, young members of the species are recognized for
+                                            their 6 vertical white bars and pale blue lines, while their caudal
+                                            fins flaunt 2 tones of blue. This fish lives out its days among the
+                                            coral reefs of the Maldives, Japan, Taiwan and Indonesia, but it can
+                                            also be found in lagoons at depths of up to 82 feet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="image_title">
+                                <p>Pseudanthias Taeniatus</p>
+                            </div>
+                            <img id="myImg4" src="images/pseudanthiasTaeniatus.jpg"/>
+                            <!-- The Modal -->
+                            <div id="myModal4" class="modal">
+                                <div class="modal-content" >
+                                    <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+                                    <h2>Pseudanthias Taeniatus</h2>
+                                    <img id="img04" class="center-block img-responsive">
+                                    <div class="img-caption">
+                                        <p>
+                                            Pseudanthias Taeniatus is a beautiful red and white fish that can be
+                                            found in the Red Sea at depths ranging between 32 and 164 feet. This
+                                            particular species of fish can grow up to 5.1 inches in length, but
+                                            even though it is quite small, it is definitely one of the world’s
+                                            most eye-catching sea dwellers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="image_title">
+                                <p>Mandarin</p>
+                            </div>
+                            <img id="myImg5" src="images/mandarin.jpg"/>
+                            <!-- The Modal -->
+                            <div id="myModal5" class="modal">
+                                <div class="modal-content" >
+                                    <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+                                    <h2>Mandarin</h2>
+                                    <img id="img05" class="center-block img-responsive">
+                                    <div class="img-caption">
+                                        <p>
+                                            Last but not least, we’re going to tell you a bit about the Mandarinfish,
+                                            which could very well be the most beautiful fish on Earth. Also known
+                                            as the “mandarin dragonet”, this stunning little creature lives in
+                                            the Pacific, specifically amongst reefs, and since it is quite small
+                                            (2.6 inches) it is not easily spotted in the wild. Its diet includes
+                                            fish eggs, polychaete worms and ostracods, and it is known to be quite
+                                            difficult to keep in aquariums because of its strict eating habits.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- //end accordion galley -------------------------------------------------------------------- -->
+                <p class="page_description">
+                    Suspendisse tempus mauris in nunc tincidunt cursus. Vivamus nec dolor vel ligula interdum
+                    efficitur non aliquam tortor. Duis vel varius purus. Nunc neque lectus, blandit sit amet
+                    fermentum in, euismod at ipsum. Nunc pharetra elit ac feugiat placerat. Morbi tristique
+                    pharetra vestibulum. Nunc at nisi scelerisque, malesuada eros in, viverra massa. Donec non
+                    metus ultrices velit ultrices pharetra. Suspendisse tortor ipsum, bibendum ac dignissim ac,
+                    sollicitudin non libero. Donec nulla nibh, ultricies vel interdum sit amet, euismod in metus.
+                    In ut ipsum eleifend, fringilla nisl a, pellentesque eros. Fusce interdum nunc nec urna
+                    scelerisque, ut feugiat enim sollicitudin. Integer aliquam neque sit amet neque congue mattis.
+                    Aliquam erat volutpat. Phasellus sed aliquet massa. Pellentesque ac efficitur dolor.
+                    Pellentesque ac mi libero. Aliquam consectetur, arcu et ultrices auctor, orci nunc suscipit
+                    sem, ullamcorper vestibulum quam nunc eget orci. Donec sit amet odio porta, pretium ex sed,
+                    feugiat nisi. Sed vestibulum ante mollis ligula varius volutpat. Maecenas id dui nec ante
+                    pellentesque sodales. Vestibulum vitae libero molestie, posuere sapien ut, viverra ipsum.
+                    Nullam mattis pulvinar ipsum eu ultrices. Nulla in turpis ac mauris bibendum interdum.
+                    Pellentesque sed suscipit lectus, non rutrum justo. Phasellus eu viverra nisl, auctor tempor
+                    ex. Etiam sed consectetur odio. Ut lobortis lectus ligula, at efficitur mi blandit nec ibenduma.
+                    Curabitur dapibus posuere tortor, eget iaculis erat venenatis vitae. Fusce in leo euismod,
+                    lacinia augue non, tempus lacus. Donec risus turpis, consectetur at porta id, dictum ac mauris.
+                    Vestibulum congue ornare consectetur. Sed rutrum sit amet nulla in posuere. Sed congue iaculis
+                    blandit. Etiam lectus arcu, varius quis euismod tempor, vestibulum id risus tinditmon.
+                    Suspendisse tempus mauris in nunc tincidunt cursus. Vivamus nec dolor vel ligula interdum
+                    efficitur non aliquam tortor. Duis vel varius purus. Nunc neque lectus, blandit sit amet
+                    fermentum in, euismod at ipsum. Nunc pharetra elit ac feugiat placerat. Morbi tristique
+                    pharetra vestibulum. Nunc at nisi scelerisque, malesuada eros in, viverra massa. Donec non
+                    metus ultrices velit ultrices pharetra. Suspendisse tortor ipsum, bibendum ac dignissim ac,
+                    sollicitudin non libero. Donec nulla nibh, ultricies vel interdum sit amet, euismod in metus.
+                    In ut ipsum eleifend, fringilla nisl a, pellentesque eros. Fusce interdum nunc nec urna
+                    scelerisque, ut feugiat enim sollicitudin. Integer aliquam neque sit amet neque congue mattis.
+                </p>
+                <!-- MOVING BLOCKS ----------------------------------------------------------------------------- -->
+                <div id="features">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="feature">
+                            <i class="glyphicon glyphicon-camera"></i>
+                            <div class="title_border"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="feature">
+                            <i class="glyphicon glyphicon-gift"></i>
+                            <div class="title_border"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="feature">
+                            <i class="glyphicon glyphicon-globe"></i>
+                            <div class="title_border"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /end moving blocks ------------------------------------------------------------------------ -->
+            </div>
+            <!-- /end title-content ---------------------------------------------------------------------------- -->
+        </div>
+        <!-- /end content row ---------------------------------------------------------------------------------- -->
     </div>
+    <!-- /end row ---------------------------------------------------------------------------------- -->
+</div>
 
 
-    <!-- jQuery -->
-    <script src="jQuery/jquery-3.1.1.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/index.js"></script>
-    </body>
+
+<!-- jQuery -->
+<script src="jQuery/jquery-3.1.1.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/js/bootstrap.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/index.js"></script>
+</body>
 </html>
 
 

@@ -3,7 +3,7 @@ $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop(); // this = window. It tells how far it is scrolled from the top
     $('.fish').css({
-        'transform' : 'translate(0px, '+ wScroll /1.2 +'%)'
+        'transform' : 'translate(0px, '+ wScroll /0.8 +'px)'
     });
 });
 
